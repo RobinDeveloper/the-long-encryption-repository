@@ -1,0 +1,49 @@
+@font-face {
+  font-family: nerdfont;
+  src: url(../fonts/nerdfont.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.keys-checked {
+    font-family: nerdfont;
+    color: #4B4B4B;
+    position: absolute;
+    top: 10vh;
+    right: 10vh;
+}
+
+.current-key {
+    font-family: nerdfont;
+    color: #4B4B4B;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vh;
+}
+
+.on-off-switch {
+  position: fixed; /* set position of the switch container to relative */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content; /* set the width of the switch container to fit its contents */
+}
+
+.on-off-switch img {
+  display: block; /* set the display property of the img to block */
+  max-width: 100%; /* set the max-width of the img to 100% */
+}
+
+.block {
+    position: absolute;
+    top: 0%;
+    left: 0%; /* change to 50% to translate it to the off side*/
+    width: calc(50%);
+    height: calc(100%);
+    background-color: #4B4B4B;
+    z-index: 1;
+}
