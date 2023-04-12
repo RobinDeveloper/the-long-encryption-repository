@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
+const PORT = process.env.PORT || 3030;
+
 
 let keysCount = 0;
 let currentKeyString = "";
@@ -27,4 +29,4 @@ app.post('/current-key', (req, res) => {
     res.send(`Current key: ${currentKey}`);
 });
 
-app.listen(8080);
+app.listen(PORT);
